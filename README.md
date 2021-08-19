@@ -1,6 +1,6 @@
 # Frontend Mentor - Job Listings Challenge
 
-![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Job Listings coding challenge](.src/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -18,9 +18,9 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 Your users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Filter job listings based on the categories
+-  View the optimal layout for the site depending on their device's screen size
+-  See hover states for all interactive elements on the page
+-  Filter job listings based on the categories
 
 ### Filtering
 
@@ -30,10 +30,10 @@ Filter job listings based on the categories using the HTML `data-` attribute. In
 
 The categories are:
 
-- Role: Frontend, Backend, Fullstack
-- Level: Junior, Midweight, Senior
-- Languages: Python, Ruby, JavaScript, HTML, CSS
-- Tools: React, Sass, Vue, Django, RoR (Ruby on Rails)
+-  Role: Frontend, Backend, Fullstack
+-  Level: Junior, Midweight, Senior
+-  Languages: Python, Ruby, JavaScript, HTML, CSS
+-  Tools: React, Sass, Vue, Django, RoR (Ruby on Rails)
 
 So, if a job listing is for has the following categories `Frontend, Junior, JavaScript, React` your HTML data attributes would look like this `data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react"`.
 
@@ -47,7 +47,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## Where to find everything
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to.
 
 The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
 
@@ -97,6 +97,6 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 A massive thank you to our community sponsors!
 
-- [Vercel](https://bit.ly/fem-vercel) offers an amazing website hosting service, which is super simple to set up. Just connect your GitHub account, point to a repo and your site will be deployed. Perfect for your website and frontend hosting needs - especially since it's free to get started!
-- [Sizzy](https://bit.ly/fm-sizzy) is an extremely useful browser designed specifically to improve a developer's workflow when building websites. You can fire up multiple device emulators and run them all in sync while building out your web pages. Perfect for helping build fully responsive websites!
-- [Qualified](https://bit.ly/fem-qualified) helps companies assess engineers with realistic code tests and pair-programming interviews. Their assessments test on-the-job skills as opposed to algorithmic puzzles which leads to a much better recruitment process for everyone involved.
+-  [Vercel](https://bit.ly/fem-vercel) offers an amazing website hosting service, which is super simple to set up. Just connect your GitHub account, point to a repo and your site will be deployed. Perfect for your website and frontend hosting needs - especially since it's free to get started!
+-  [Sizzy](https://bit.ly/fm-sizzy) is an extremely useful browser designed specifically to improve a developer's workflow when building websites. You can fire up multiple device emulators and run them all in sync while building out your web pages. Perfect for helping build fully responsive websites!
+-  [Qualified](https://bit.ly/fem-qualified) helps companies assess engineers with realistic code tests and pair-programming interviews. Their assessments test on-the-job skills as opposed to algorithmic puzzles which leads to a much better recruitment process for everyone involved.
