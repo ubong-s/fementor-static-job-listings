@@ -1,0 +1,385 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+/* CSS Variables */
+:root {
+   /* Primary */
+   --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+   /* Neutral */
+   --Light-Grayish-Cyan-BG: hsl(180, 52%, 96%);
+   --Light-Grayish-Cyan-FT: hsl(180, 31%, 95%);
+   --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+   --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Spartan', sans-serif;
+}
+
+body {
+   font-family: 'Spartan', sans-serif;
+   background: var(--Light-Grayish-Cyan-BG);
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+/* li {
+  padding: 0;
+  margin: 0;
+} */
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+.container {
+   position: relative;
+   width: 88%;
+   padding: 3rem 0;
+   margin: auto;
+}
+
+.btn {
+   display: inline;
+   cursor: pointer;
+   padding: 0.5rem;
+   margin: 0 0.75rem 0.75rem 0;
+   background: var(--Light-Grayish-Cyan-BG);
+   color: var(--Desaturated-Dark-Cyan);
+   border: none;
+   font-size: 0.7rem;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   border-radius: 5px;
+   outline: none;
+}
+
+.btn:hover {
+   background: var(--Desaturated-Dark-Cyan);
+   color: white;
+}
+
+.top-bg {
+   background-image: url(/images/bg-header-mobile.svg);
+   background-color: var(--Desaturated-Dark-Cyan);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 25vh;
+}
+
+.filter-container {
+   /* position: absolute; */
+   display: flex;
+   align-items: center;
+   padding: 1.25rem;
+   gap: 2rem;
+   background: white;
+   margin-top: -5rem;
+   border-radius: 5px;
+   opacity: 0;
+   transition: 0.3s all ease;
+}
+
+.filter-container.show {
+   opacity: 1;
+   transition: 0.3s all ease;
+}
+
+.filter-inner {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.75rem;
+}
+
+.filter-select {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   padding: 0 0 0 0.75rem;
+   background: var(--Light-Grayish-Cyan-BG);
+   color: var(--Desaturated-Dark-Cyan);
+   border: none;
+   font-size: 1rem;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   border-radius: 5px;
+   outline: none;
+   overflow: hidden;
+}
+
+.delete-filter {
+   padding: 0.75rem;
+   margin-left: 0.5rem;
+   background: var(--Desaturated-Dark-Cyan);
+}
+
+.delete-filter:hover {
+   background: var(--Very-Dark-Grayish-Cyan);
+}
+
+.clear-btn {
+   color: var(--Very-Dark-Grayish-Cyan);
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.clear-btn:hover {
+   color: var(--Desaturated-Dark-Cyan);
+   text-decoration: underline;
+}
+
+.jobs-container {
+   margin-top: 6rem;
+}
+
+.job-item {
+   position: relative;
+   background: white;
+   padding: 1.5rem 1.5rem 1rem;
+   margin: 3rem 0;
+   border-radius: 0.5rem;
+   -webkit-box-shadow: 1px 1px 15px 0px rgba(102, 153, 153, 0.23);
+   -moz-box-shadow: 1px 1px 15px 0px rgba(102, 153, 153, 0.23);
+   box-shadow: 1px 1px 15px 0px rgba(102, 153, 153, 0.23);
+   /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+}
+
+.job-light {
+   border-left: 5px solid var(--Desaturated-Dark-Cyan);
+}
+
+.c-logo {
+   position: absolute;
+   width: 60px;
+   top: -10%;
+   left: 10;
+}
+
+.comp-header {
+   margin: 1.5rem 0 1rem;
+}
+
+.comp-header > * {
+   display: inline;
+   margin-right: 0.5rem;
+}
+
+.company {
+   font-size: 0.9rem;
+   color: var(--Desaturated-Dark-Cyan);
+}
+
+.top-btn {
+   cursor: pointer;
+   font-size: 0.6rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   padding: 0.4rem 0.5rem 0.25rem;
+   border: none;
+   border-radius: 20px;
+   color: white;
+   outline: none;
+   cursor: pointer;
+}
+
+.new-b {
+   background: var(--Desaturated-Dark-Cyan);
+}
+
+.feat-b {
+   background: var(--Very-Dark-Grayish-Cyan);
+}
+
+.position {
+   color: var(--Very-Dark-Grayish-Cyan);
+   font-weight: 700;
+}
+
+.position:hover {
+   color: var(--Desaturated-Dark-Cyan);
+   cursor: pointer;
+}
+
+.job-meta {
+   padding: 1rem 0;
+   border-bottom: 0.5px solid #cacaca;
+}
+
+.job-meta ul li {
+   display: inline;
+   font-size: 0.75rem;
+   color: var(--Dark-Grayish-Cyan);
+   padding: 0 0.5rem 0;
+}
+
+.job-meta ul li:first-child {
+   padding: 0 0.5rem 0;
+}
+
+.job-meta li::before {
+   content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+   color: var(--Dark-Grayish-Cyan); /* Change the color */
+   font-weight: normal; /* If you want it to be bold */
+   display: inline-block; /* Needed to add space between the bullet and the text */
+   width: 1em; /* Also needed for space (tweak if needed) */
+   margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.job-meta li:first-child::before {
+   content: '';
+   color: var(--Dark-Grayish-Cyan);
+   margin-left: -1rem;
+}
+
+.btn-container {
+   padding: 1rem 0 0;
+   display: flex;
+}
+
+.attribution {
+   font-size: 0.6rem;
+   text-align: center;
+}
+
+.attribution a {
+   color: var(--Dark-Grayish-Cyan);
+}
+
+@media (min-width: 768px) {
+   .filter-container {
+      width: 100%;
+      justify-content: space-between;
+   }
+}
+
+@media (min-width: 1025px) {
+   .container {
+      width: 80%;
+      padding: 4rem 0;
+   }
+
+   .btn {
+      margin: 0 0 0 0.5rem;
+      font-size: 0.8rem;
+   }
+
+   .top-bg {
+      background-image: url(/images/bg-header-desktop.svg);
+      background-color: var(--Desaturated-Dark-Cyan);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 20vh;
+   }
+
+   .filter-container {
+      padding: 1.25rem 3rem;
+      margin-top: -9%;
+   }
+
+   .filter-inner {
+      gap: 1rem;
+   }
+
+   .filter-select {
+      cursor: pointer;
+      padding: 0 0 0 0.75rem;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: 5px;
+      outline: none;
+      overflow: hidden;
+   }
+
+   .delete-filter {
+      padding: 0.75rem;
+   }
+
+   .jobs-container {
+      margin-top: 3rem;
+   }
+
+   .job-item {
+      display: grid;
+      grid-template-columns: 1fr 4fr 6fr;
+      gap: 1.5rem;
+      align-items: center;
+      padding: 2.5rem;
+      margin: 2rem 0;
+   }
+
+   .c-logo {
+      position: relative;
+      width: 100px;
+      top: 0;
+      left: 0;
+   }
+
+   .comp-header {
+      margin: 0 0 1rem;
+   }
+
+   .comp-header > * {
+      display: inline;
+      margin-right: 0.5rem;
+   }
+
+   .company {
+      font-size: 1rem;
+   }
+
+   .top-btn {
+      font-size: 0.8rem;
+   }
+
+   .position {
+      font-size: 1.2rem;
+   }
+
+   .job-meta {
+      padding: 1rem 0 0;
+      border: none;
+   }
+
+   .job-meta ul li {
+      font-size: 1rem;
+      padding: 0 0.7rem 0 0;
+   }
+
+   .job-meta ul li:first-child {
+      padding: 0 0.7rem 0;
+   }
+
+   .job-meta li::before {
+      width: 1.4em; /* Also needed for space (tweak if needed) */
+      margin-left: 0; /* Also needed for space (tweak if needed) */
+   }
+
+   .job-meta li:first-child::before {
+      margin-left: -2rem;
+   }
+
+   .btn-container {
+      display: flex;
+      text-align: end;
+      justify-content: flex-end;
+   }
+
+   .attribution {
+      padding: 2rem 0 0;
+      font-size: 0.8rem;
+   }
+}
